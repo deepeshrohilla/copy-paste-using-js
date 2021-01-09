@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    transition: 0.4s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(wallpaper2you_418284.jpg);
+    background-size: cover;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 1.5em;
+    resize: none;
+    border: 5px solid #ffffff60;
+    border-radius: 10px;
+    background-color: #ffffff3d;
+    color: #3d3282;
+}
+
+textarea::placeholder {
+    opacity: .7;
+    color: #3d3282;
+}
+
+button {
+    padding: 10px 25px;
+    margin: 5px 0;
+    background-color: #ffffff3d;
+    border: 5px solid #ffffff60;
+    border-radius: 10px;
+    font-size: 2em;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    color: #3d3282;
+}
+
+button:active {
+    transform: scale(.9);
+}
+
+span {
+    position: absolute;
+    top: -40px;
+    right: 3px;
+    font-size: 1em;
+    background-color: #fff;
+    color: #3d3282;
+    padding: 10px 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+
+span::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 43%;
+    transform: rotate(45deg);
+}
